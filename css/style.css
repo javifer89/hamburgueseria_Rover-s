@@ -9,7 +9,7 @@ html {
     --fuenteprincipal: 'Montserrat', sans-serif;
     --fuentetitulos: 'Handlee', cursive;
     --color-principal: #fa573a;
-    --color-azul:#21242e;
+    --color-secundario:#21242e;
     --margingrid: 1em;
     --fontsize: 1em;
     --max-width: 68.75em;
@@ -23,3 +23,31 @@ body{
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
 }
+
+/* Inicio Header*/
+
+header .nav-top{
+    background-color: var(--color-secundario);
+    padding: 1.25em 0px;
+}
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+header .nav-top a{
+    color: var(--color-principal);
+    text-decoration: none;
+
+}
+
+header .nav-top a i{
+    font-size: 150%;
+}
+header .nav-top span{
+    color: white;
+    display: none;
+}
+
+
+
+/* Fin Header*/
