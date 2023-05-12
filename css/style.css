@@ -51,3 +51,17 @@ header .nav-top span{
 
 
 /* Fin Header*/
+
+
+/* Inicio mediaqueries*/
+@media (min-width: 48em){
+    header .nav-top span{
+        display: inline;
+    }
+}
+header .nav-top a i{
+    font-size: 120%;
+}
+
+
+/* Fin Mediaqueries*/
