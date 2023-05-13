@@ -1,15 +1,43 @@
-@import url(./reset.css);
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
-html {
-    scroll-behavior: smooth; /* Para generar animaciones de puntos de ancla*/
+@import url(./style.css);
+
+section .blogs {
+    background-color: white;
+    padding:10px;
+    max-width: ;
 }
-:root {
-    --fuenteprincipal: 'Montserrat', sans-serif;
-    --fuentetitulos: 'Handlee', cursive;
-    --color-principal: #fa573a;
-    --color-secundario:#21242e;
-    --margingrid: 1em;
-    --fontsize: 1em;
-    --max-width: 68.75em;
+section .title {
+    text-align: center;
+    margin: 0 auto;
+}
+section .title h2 {
+    color: black;
+    font-size: 40px;
+    font-family: 'Handlee', cursive;
+    font-style: italic;
+}
+section .title h2 em {
+    color: var(--color-principal)
+}
+section .title hr {
+    border-color: var(--color-principal);
+    width: 8.75em;
+}
+section .blogs article .date {
+    display: flex;
+    width: 33.333%;
+    flex-direction: column;
+    background-color: var(--color-principal)
+}
+
+section .blogs figure {
+    display: flex;
+    width: 33.333%;
+}
+section .blogs article h2{
+font-size: 24px;
+}
+section.blogs article :is(h4, a) {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
 }
