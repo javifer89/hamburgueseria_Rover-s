@@ -1,0 +1,15 @@
+@import url(./reset.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth; /* Para generar animaciones de puntos de ancla*/
+}
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --color-principal: #fa573a;
+    --color-secundario:#21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --max-width: 68.75em;
+}
