@@ -1,0 +1,119 @@
+@import url(./style.css);
+
+/*Inicio BLOG*/
+section .title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+section .title h2 {
+    color: black;
+    font-size: 40px;
+    font-family: var(--fuentetitulos);
+    font-style: italic;
+    font-weight: bold;
+}
+section .title h2 em {
+    max-width: 37.5em;
+    color: var(--color-principal)
+}
+section .title hr {
+    border-color: var(--color-principal);
+    width: 4.75em;
+    display: inline-block;
+    position: relative;
+    margin-top: 15px;
+}
+section .title span {
+    color: var(--color-principal);
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+section.blogs {
+    background-color: white;
+    padding:10px;
+    margin-left: 50px;
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    font-family: var(--fuenteprincipal);
+}
+section.blogs div.entry {
+    width: 33.333%;
+    display: grid;
+    padding: 25px;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr;
+    }
+section.blogs div.entry article {
+   width: 100%;
+   padding: 15px;
+   display: inline-block;
+   text-align: left;
+}
+section.blogs article span {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:35,5%;
+    z-index: 1;
+    opacity: 0.75;
+}
+section.blogs figure img{
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 160px;
+}
+section.blogs .entry article h2 {
+    font-size: 28px;
+    padding-top: 30px;
+    padding-left: 20px;
+
+}
+section.blogs article :is(h4, p, a){
+font-size: 16px;
+width: 100%;
+padding: 10px;
+}
+section.blogs article :is(h4, a) {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Fin BLOG*/
+
+
+/*Inicio media queries*/
+
+@media (min-width: 37.5em){
+    section.blogs {
+        max-width: none;
+    }
+    section.blogs div.entry {
+        display: flex;
+        width: 100%;
+    }
+    section.blogs figure img{
+        width: 380px;
+        height: 200px;
+    }
+    section.blogs article p {
+        max-width: 65%;
+        width: 65%
+    }
+}
+/*Fin media queries*/
