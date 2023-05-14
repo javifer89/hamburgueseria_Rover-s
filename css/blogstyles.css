@@ -93,3 +93,23 @@ section.blogs article :is(h4, a) {
     text-decoration: none;
     font-weight: bold;
 }
+
+
+
+@media (min-width: 37.5em){
+    section.blogs {
+        max-width: none;
+    }
+    section.blogs div.entry {
+        display: flex;
+        width: 100%;
+    }
+    section.blogs figure img{
+        width: 380px;
+        height: 200px;
+    }
+    section.blogs article p {
+        max-width: 65%;
+        width: 65%
+    }
+}
