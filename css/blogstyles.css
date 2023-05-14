@@ -1,18 +1,11 @@
 @import url(./style.css);
 
-section.blogs {
-    background-color: white;
-    padding:10px;
-    display: flex;
-    flex-direction: row;
-
-
-}
 section .title {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
     align-items: center;
+    padding-top: 20px;
 }
 section .title h2 {
     color: black;
@@ -42,30 +35,27 @@ section .title span {
 
 
 section.blogs {
-    display: flex;
+    background-color: white;
+    padding:10px;
+    margin-left: 50px;
+    display: flex;;
     flex-direction: column;
     align-items: center;
-
-
+    max-width: 500px;
+    font-family: var(--fuenteprincipal);
 }
-section.blogs .entry {
+section.blogs div.entry {
     width: 33.333%;
-    display: flex;
-    padding-top: 20px;
+    display: grid;
+    padding: 25px;
     justify-content: center;
+    grid-template-columns: 2fr 2fr;
     }
-section.blogs article {
+section.blogs div.entry article {
    width: 100%;
-   padding: 10px;
+   padding: 15px;
    display: inline-block;
    text-align: left;
-
-}
-
-section.blogs article .date {
-
-
-
 }
 section.blogs article span {
     background-color: var(--color-principal);
@@ -84,14 +74,16 @@ section.blogs article span {
 section.blogs figure img{
     display: flex;
     position: relative;
-    width: 280px;
-    height: 140px;
+    width: 250px;
+    height: 160px;
 }
-section.blogs article h2 {
-    font-weight: bold;
-    font-size: larger;
+section.blogs .entry article h2 {
+    font-size: 28px;
+    padding-top: 30px;
+    padding-left: 20px;
+
 }
-section.blogs article :is(h2, h4, p, a){
+section.blogs article :is(h4, p, a){
 font-size: 16px;
 width: 100%;
 padding: 10px;
