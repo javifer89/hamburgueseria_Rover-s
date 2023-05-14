@@ -1,5 +1,6 @@
 @import url(./style.css);
 
+/*Inicio BLOG*/
 section .title {
     text-align: center;
     margin: 0 auto;
@@ -31,7 +32,6 @@ section .title span {
     font-size: 28px;
     font-weight: bold;
 }
-
 
 
 section.blogs {
@@ -93,8 +93,10 @@ section.blogs article :is(h4, a) {
     text-decoration: none;
     font-weight: bold;
 }
+/* Fin BLOG*/
 
 
+/*Inicio media queries*/
 
 @media (min-width: 37.5em){
     section.blogs {
@@ -113,3 +115,4 @@ section.blogs article :is(h4, a) {
         width: 65%
     }
 }
+/*Fin media queries*/
