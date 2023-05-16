@@ -178,9 +178,83 @@ font-size: 2em;
 /*Final HERO*/
 
 /*Inicio SERVICES*/
+main section{
+padding: 2.125em var(--margingrid)
+}
+main section h2{
+color: var(--color-secundario);
+font-family: var(--fuentetitulos);
+font-size: 2em;
+text-align: center;
+}
+main section h2 span {
+    color: var(--color-principal);
+}
+main section .underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+main section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--color-principal)
+}
+main section .underline span{
+    font-weight: 700;
+    color: var(--color-principal);
+    text-align: center;
+    display: block;
+}
 
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+main section:last-child{
+    margin-bottom: 3em;
+}
+/* main section .grid article {   COMO SERÍA PARA EL BLOG
+    width: 50%;
+}
+main section .grid article:last-child{
+    width: 100%;*/
+main #services .grid article{
+        width: 100%;
+    }
+main #services article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+main #services article>div i{
+    color: var(--color-principal);
+    font-size: 140%;
+    border: 1px solid var(--color-principal);
+    padding: 0.3em;
+    display: inline-block;
+}
+main #services article h3{
+    margin: var(--margingrid);
+    font-weight: 700;
+    font-size:110%;
+}
+main section p{
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
 
-/*Inicio SERVICES*/
+main section .enlace{
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 700;
+}
+.fa-truck{
+    transform:rotateY(180deg)
+}
+/*Final SERVICES*/
+
 
 /*Inicio BLOG*/
 section .title {
@@ -318,6 +392,20 @@ section.blogs article :is(h4, a) {
     footer{
         text-align: left;
     }
+    main #services article {
+        width: 50%;
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin-top: var(--margingrid);
+    }
+    main #services article:last-child{
+        width: 100%;
+    }
+
+
+
+
 }
 
 @media(min-width: 62.75em){
@@ -339,6 +427,12 @@ section.blogs article :is(h4, a) {
     }
     .hero .container{
         padding: 0;
+    }
+    main #services article {
+        width: 33.333%;
+    }
+    main #services article:last-child{
+        width: 33.333%;
     }
 }
 
