@@ -120,6 +120,67 @@ color: var(--color-principal)
     right: 1.25rem;
 }
 
+
+/*Inicio HERO*/
+.hero {
+    height: 60vh;
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    position: center center;
+    background-blend-mode: multiply;
+    background-color: #888;
+    padding-top: 6vh;
+    color: white;
+}
+.hero h1{
+    font-family: var(--fuentetitulos);
+    font-size: 2.25em;
+}
+.hero h2{
+    color: var(--color-principal);
+    font-size: 1.25em;
+    margin: var(--margingrid)
+
+}
+.hero p{
+    font-size: 1.15em;
+}
+.hero .container>div{
+    margin: var(--margingrid) 0;
+}
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1.15em;
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
+}
+.boton:hover{
+    background-color: transparent;
+    color: var(--color-principal)
+}
+.boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .social{
+    display: flex;
+    justify-content: space-between;
+    width: 10.5em;
+}
+.hero .social a{
+color: white;
+font-size: 2em;
+}
+.hero .container{
+    padding: 0 var(--margingrid)
+}
+/*Final HERO*/
+
+
 /*Inicio BLOG*/
 section .title {
     text-align: center;
@@ -274,6 +335,9 @@ section.blogs article :is(h4, a) {
     header nav .menu a{
         padding: 0.5em 0 1.25em 1.25em;
         border-bottom:0px;
+    }
+    .hero .container{
+        padding: 0;
     }
 }
 
