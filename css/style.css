@@ -147,7 +147,6 @@ color: var(--color-principal)
 .hero .container>div{
     margin: var(--margingrid) 0;
 }
-
 .boton {
     display: inline-block;
     text-decoration: none;
@@ -164,7 +163,6 @@ color: var(--color-principal)
     transition: transform 0.5s;
     transform: translateX(5px);
 }
-
 .hero .social{
     display: flex;
     justify-content: space-between;
@@ -179,6 +177,10 @@ font-size: 2em;
 }
 /*Final HERO*/
 
+/*Inicio SERVICES*/
+
+
+/*Inicio SERVICES*/
 
 /*Inicio BLOG*/
 section .title {
@@ -341,6 +343,7 @@ section.blogs article :is(h4, a) {
 }
 
 /*Fin media queries HEADER*/
+
 
 
 /*Inicio media queries FOOTER*/
