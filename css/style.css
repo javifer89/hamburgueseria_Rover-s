@@ -18,7 +18,6 @@ html {
     max-width: var(--max-width);
     margin: 0 auto;
 }
-
 body{
     font-family: var(--fuenteprincipal);
     font-size: var(--fontsize);
