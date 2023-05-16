@@ -256,6 +256,43 @@ main section .enlace{
 /*Final SERVICES*/
 
 
+/*Inicio ABOUTUS*/
+main #aboutus .grid figure{
+    height: 400px;
+    width:100%;
+}
+main #aboutus .grid>div{
+    height: 400px;
+    width: 100%;
+}
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+main #aboutus .grid h4 {
+    color: var(--color-principal);
+    margin: var(--margingrid) 0;
+}
+main #aboutus .imagen {
+    width: 90%;
+    margin: 1.5em auto;
+}
+main #aboutus .imagen .marco {
+    border: 3px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+main #aboutus .imagen:hover :is(.marco, .marco img){
+    transform:rotateZ(0deg);
+}
+
+
+/*Final ABOUTUS*/
+
 /*Inicio BLOG*/
 section .title {
     text-align: center;
@@ -403,7 +440,15 @@ section.blogs article :is(h4, a) {
         width: 100%;
     }
 
-
+    main #aboutus .grid figure, main #aboutus .grid>div{
+    width: 50%;
+    }
+    main #aboutus .grid h3{
+        margin-top: var(--margingrid)
+    }
+    main #aboutus .imagen{
+        margin: var(--margingrid) 0;
+    }
 
 
 }
