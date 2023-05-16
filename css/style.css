@@ -82,6 +82,38 @@ header nav .menu li:last-child a{
     border-bottom: 0px;
 }
 /* final header */
+
+
+/*Inicio footer*/
+footer{
+    background-color: var(--color-secundario);
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 3.125em;
+    padding: 0.725em;
+    bottom: 0;
+    font-size: 110%;
+}
+footer a{
+color: white;
+text-decoration: none;
+}
+footer a:hover{
+color: var(--color-principal)
+}
+/* final footer */
+
+.flecha a{
+    display: block;
+    color: var(--color-principal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
 /*Inicio BLOG*/
 section .title {
     text-align: center;
@@ -215,6 +247,9 @@ section.blogs article :is(h4, a) {
     header .nav-top .container{
         justify-content: space-between;
     }
+    footer{
+        text-align: left;
+    }
 }
 
 @media(min-width: 62.75em){
@@ -237,3 +272,9 @@ section.blogs article :is(h4, a) {
 }
 
 /*Fin media queries HEADER*/
+
+
+/*Inicio media queries FOOTER*/
+
+
+/*Fin media queries FOOTER*/
