@@ -369,6 +369,15 @@ main section#menu h2{
     color: white;
 }
 /*MENU SERVICES MENU*/
+
+section#menu .flecha i{
+    border: 0px;
+    background-color: white;
+}
+
+/* section#menu .flecha a {
+} */
+
 section .services nav {
     display: flex;
     flex-direction: column;
