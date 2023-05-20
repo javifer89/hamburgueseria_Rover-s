@@ -307,9 +307,7 @@ section.blogs {
     max-width: 500px;
     font-family: var(--fuenteprincipal);
 }
-section.blogs div.entry {
-    width: 33.333%;
-    display: grid;
+section{
     padding: 25px;
     justify-content: center;
     grid-template-columns: 2fr 2fr;
@@ -364,6 +362,7 @@ section.blogs article :is(h4, a) {
 /* INICIO TITULO MENU */
 section#menu {
     background-color: var(--color-secundario);
+    padding: 100px;
 }
 main section#menu h2{
     color: white;
@@ -375,13 +374,13 @@ section#menu .flecha i{
     background-color: white;
 }
 
-/* section#menu .flecha a {
-} */
+
 
 section .services nav {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    margin-bottom: 50px
 }
 section .services ul li a{
     color: white;
@@ -405,6 +404,7 @@ background-color: var(--color-principal);
 
 .today-offer h3 {
     font-weight: 700;
+    color: white
 }
 .today-offer hr{
     border-color: var(--color-principal);
@@ -420,7 +420,7 @@ section.offers article span {
     color: var(--color-principal)
 }
 section.offers figure {
-    margin-bottom: 25px;
+    margin: 25px 0 25px 0;
 }
 section.offers div span {
     display: inline-block;
@@ -438,8 +438,11 @@ section.offers div h6 {
 section.offers div span#price{
     font-size: 18px;
 }
-section.offers div span#order{
+section.offers div a{
     font-weight: 700;
+    text-decoration: none;
+    color: var(--color-principal);
+    padding-bottom: 25px;
 }
 /*FIN OFERTAS MENU*/
 
@@ -451,9 +454,11 @@ section.offers div span#order{
 
 
 
-/*Inicio media queries BLOG*/
 
-@media (min-width: 37.5em){
+
+
+/* inicio media queries 48em (768px)*/
+@media(min-width: 48em){
     section.blogs {
         max-width: 1100px;
         margin: 0 auto;
@@ -470,12 +475,6 @@ section.offers div span#order{
         max-width: 65%;
         width: 65%
     }
-}
-/*Fin media queries BLOG*/
-
-
-/* inicio media queries 48em */
-@media(min-width: 48em){
     header .nav-top a i{
         font-size: 120%;
     }
@@ -512,10 +511,40 @@ section.offers div span#order{
     }
 
 
+
+    section#menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+    }
+    section#menu .container {
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    section .services {
+        width:40%
+    }
+    section .offers {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    section .offers figure{
+        width: 30%;
+        display: inline-block;
+    }
+    section#menu .offers>div{
+        width: 70%;
+    }
+
 }
-/* Inicio media queries 62.75em */
+/* Inicio media queries 62.75em (1004px)*/
 
 @media(min-width: 62.75em){
+
     header nav .menu{
         width: auto;
     }
