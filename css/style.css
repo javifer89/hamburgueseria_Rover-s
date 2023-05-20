@@ -186,6 +186,7 @@ color: var(--color-secundario);
 font-family: var(--fuentetitulos);
 font-size: 2em;
 text-align: center;
+font-weight: 700;
 }
 main section h2 span {
     color: var(--color-principal);
@@ -294,37 +295,6 @@ main #aboutus .imagen:hover :is(.marco, .marco img){
 /*Final ABOUTUS*/
 
 /*Inicio BLOG*/
-section .title {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    align-items: center;
-    padding-top: 20px;
-}
-section .title h2 {
-    color: black;
-    font-size: 40px;
-    font-family: var(--fuentetitulos);
-    font-style: italic;
-    font-weight: bold;
-}
-section .title h2 em {
-    max-width: 37.5em;
-    color: var(--color-principal)
-}
-section .title hr {
-    border-color: var(--color-principal);
-    width: 4.75em;
-    display: inline-block;
-    position: relative;
-    margin-top: 15px;
-}
-section .title span {
-    color: var(--color-principal);
-    position: absolute;
-    font-size: 28px;
-    font-weight: bold;
-}
 
 
 section.blogs {
@@ -375,7 +345,6 @@ section.blogs .entry article h2 {
     font-size: 28px;
     padding-top: 30px;
     padding-left: 20px;
-
 }
 section.blogs article :is(h4, p, a){
 font-size: 16px;
@@ -391,91 +360,86 @@ section.blogs article :is(h4, a) {
 
 
 /*Inicio MENU*/
-/* TITULO */
-.container .title {
-    font-size: 40px;
-    font-family: var(--fuentetitulos);
-    font-style: italic;
-    font-weight: bold;
+
+/* INICIO TITULO MENU */
+section#menu {
+    background-color: var(--color-secundario);
+}
+main section#menu h2{
     color: white;
-    margin: 0 auto;
 }
-.container .title h2 em {
-    color: var(--color-principal);
-}
-.container .title hr {
-    border-color: var(--color-principal);
-    width: 1.25em;
-    display: inline-block;
-    position: relative;
-    margin-top: 15px;
-
-}
-.container .title span {
-    color: var(--color-principal);
-    position: absolute;
-    font-size: 28px;
-    font-weight: bold;
-}
-/*FIN TITULO*/
-
-
-/*MENU SERVICES*/
-.container .services nav {
+/*MENU SERVICES MENU*/
+section .services nav {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-
 }
-.container .services ul{
-
-}
-.container .services ul li a{
+section .services ul li a{
     color: white;
     text-decoration: none;
+    display: block;
+    padding: 10px;
 }
-.container .services nav li {
+section .services nav li {
     width: 100%;
     display: block;
-    padding: 5px;
 }
-.container .services nav li:hover {
+section .services nav li:hover {
 background-color: var(--color-principal);
 }
-/*FIN SERVICES*/
+/*FIN SERVICES MENU*/
 
-
-
-/*OFERTAS*/
-.today-offer {
+/*OFERTAS MENU*/
+.offers {
     color: white;
+}
+
+.today-offer h3 {
+    font-weight: 700;
 }
 .today-offer hr{
- border-color: var(--color-principal);
- width: 15px;
- text-align: left;
+    border-color: var(--color-principal);
+    width: 45px;
+    text-align: left;
+    display: inline-block
 }
-
-.offers article  {
+.today-offer p{
     color: white;
 }
-section.offers div.burger h4  {
-    font-weight: bold;
-    font-size: 20px
-}
-section.offers div.burger span#price{
-    font-size: 20px;
-}
-section.offers div.burger span #order{
 
-}
-.offers article span {
+section.offers article span {
     color: var(--color-principal)
 }
-/*FIN OFERTAS*/
+section.offers figure {
+    margin-bottom: 25px;
+}
+section.offers div span {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+section.offers div h4 {
+    font-weight: 700;
+    font-size: 17px;
+    width: 90%;
+    display: inline-block;
+}
+section.offers div h6 {
+    margin-bottom: 25px;
+}
+section.offers div span#price{
+    font-size: 18px;
+}
+section.offers div span#order{
+    font-weight: 700;
+}
+/*FIN OFERTAS MENU*/
 
 
 /*Fin MENU*/
+
+
+
+
 
 
 /*Inicio media queries BLOG*/
