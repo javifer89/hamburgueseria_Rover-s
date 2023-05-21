@@ -24,7 +24,6 @@ body{
 }
 
 
-
 /* inicio header */
 
 header .nav-top{
@@ -216,11 +215,6 @@ main section .grid {
 main section:last-child{
     margin-bottom: 3em;
 }
-/* main section .grid article {   COMO SERÍA PARA EL BLOG
-    width: 50%;
-}
-main section .grid article:last-child{
-    width: 100%;*/
 main #services .grid article{
         width: 100%;
     }
@@ -290,13 +284,9 @@ main #aboutus .imagen .marco img {
 main #aboutus .imagen:hover :is(.marco, .marco img){
     transform:rotateZ(0deg);
 }
-
-
 /*Final ABOUTUS*/
 
 /*Inicio BLOG*/
-
-
 section.blogs {
     background-color: white;
     padding:10px;
@@ -358,7 +348,6 @@ section.blogs article :is(h4, a) {
 
 
 /*Inicio MENU*/
-
 /* INICIO TITULO MENU */
 section#menu {
     background-color: var(--color-secundario);
@@ -373,8 +362,6 @@ section#menu .flecha i{
     border: 0px;
     background-color: white;
 }
-
-
 
 section .services nav {
     display: flex;
@@ -445,15 +432,7 @@ section.offers div a{
     padding-bottom: 25px;
 }
 /*FIN OFERTAS MENU*/
-
-
 /*Fin MENU*/
-
-
-
-
-
-
 
 
 
@@ -514,33 +493,67 @@ section.offers div a{
 
     section#menu {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     section#menu .container {
         margin: 0 auto;
         position: relative;
         top: 0;
         left: 0;
+        width: 70%;
+        align-items: center;
+    }
+    section#menu .section-offers {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    section .offers .burger {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    section#menu .section-offers section.offers article.burger #div1 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
     }
     section .services {
-        width:40%
+        width:30%
     }
     section .offers {
-        width: 60%;
+        width: 70%;
         display: flex;
         flex-direction: column;
     }
     section .offers figure{
         width: 30%;
-        display: inline-block;
+        margin: 0 30px 15px 0;
     }
-    section#menu .offers>div{
+    section#menu .offers article{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    section .offers div#div1 {
         width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-
+    section .offers div#div2 {
+        width: 10%;
+    }
 }
+
 /* Inicio media queries 62.75em (1004px)*/
 
 @media(min-width: 62.75em){
