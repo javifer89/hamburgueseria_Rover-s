@@ -24,7 +24,6 @@ body{
 }
 
 
-
 /* inicio header */
 
 header .nav-top{
@@ -186,6 +185,7 @@ color: var(--color-secundario);
 font-family: var(--fuentetitulos);
 font-size: 2em;
 text-align: center;
+font-weight: 700;
 }
 main section h2 span {
     color: var(--color-principal);
@@ -215,11 +215,6 @@ main section .grid {
 main section:last-child{
     margin-bottom: 3em;
 }
-/* main section .grid article {   COMO SERÍA PARA EL BLOG
-    width: 50%;
-}
-main section .grid article:last-child{
-    width: 100%;*/
 main #services .grid article{
         width: 100%;
     }
@@ -289,44 +284,9 @@ main #aboutus .imagen .marco img {
 main #aboutus .imagen:hover :is(.marco, .marco img){
     transform:rotateZ(0deg);
 }
-
-
 /*Final ABOUTUS*/
 
 /*Inicio BLOG*/
-section .title {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    align-items: center;
-    padding-top: 20px;
-}
-section .title h2 {
-    color: black;
-    font-size: 40px;
-    font-family: var(--fuentetitulos);
-    font-style: italic;
-    font-weight: bold;
-}
-section .title h2 em {
-    max-width: 37.5em;
-    color: var(--color-principal)
-}
-section .title hr {
-    border-color: var(--color-principal);
-    width: 4.75em;
-    display: inline-block;
-    position: relative;
-    margin-top: 15px;
-}
-section .title span {
-    color: var(--color-principal);
-    position: absolute;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
 section.blogs {
     background-color: white;
     padding:10px;
@@ -337,9 +297,7 @@ section.blogs {
     max-width: 500px;
     font-family: var(--fuenteprincipal);
 }
-section.blogs div.entry {
-    width: 33.333%;
-    display: grid;
+section{
     padding: 25px;
     justify-content: center;
     grid-template-columns: 2fr 2fr;
@@ -375,7 +333,6 @@ section.blogs .entry article h2 {
     font-size: 28px;
     padding-top: 30px;
     padding-left: 20px;
-
 }
 section.blogs article :is(h4, p, a){
 font-size: 16px;
@@ -390,9 +347,97 @@ section.blogs article :is(h4, a) {
 /* Fin BLOG*/
 
 
-/*Inicio media queries BLOG*/
+/*Inicio MENU*/
+/* INICIO TITULO MENU */
+section#menu {
+    background-color: var(--color-secundario);
+    padding: 100px;
+}
+main section#menu h2{
+    color: white;
+}
+/*MENU SERVICES MENU*/
 
-@media (min-width: 37.5em){
+section#menu .flecha i{
+    border: 0px;
+    background-color: white;
+}
+
+section .services nav {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 50px
+}
+section .services ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+section .services nav li {
+    width: 100%;
+    display: block;
+}
+section .services nav li:hover {
+background-color: var(--color-principal);
+}
+/*FIN SERVICES MENU*/
+
+/*OFERTAS MENU*/
+.offers {
+    color: white;
+}
+
+.today-offer h3 {
+    font-weight: 700;
+    color: white
+}
+.today-offer hr{
+    border-color: var(--color-principal);
+    width: 45px;
+    text-align: left;
+    display: inline-block
+}
+.today-offer p{
+    color: white;
+}
+
+section.offers article span {
+    color: var(--color-principal)
+}
+section.offers figure {
+    margin: 25px 0 25px 0;
+}
+section.offers div span {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+section.offers div h4 {
+    font-weight: 700;
+    font-size: 17px;
+    width: 90%;
+    display: inline-block;
+}
+section.offers div h6 {
+    margin-bottom: 25px;
+}
+section.offers div span#price{
+    font-size: 18px;
+}
+section.offers div a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-principal);
+    padding-bottom: 25px;
+}
+/*FIN OFERTAS MENU*/
+/*Fin MENU*/
+
+
+
+/* inicio media queries 48em (768px)*/
+@media(min-width: 48em){
     section.blogs {
         max-width: 1100px;
         margin: 0 auto;
@@ -409,12 +454,6 @@ section.blogs article :is(h4, a) {
         max-width: 65%;
         width: 65%
     }
-}
-/*Fin media queries BLOG*/
-
-
-/* inicio media queries HEADER */
-@media(min-width: 48em){
     header .nav-top a i{
         font-size: 120%;
     }
@@ -451,9 +490,74 @@ section.blogs article :is(h4, a) {
     }
 
 
+
+    section#menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section#menu .container {
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 70%;
+        align-items: center;
+    }
+    section#menu .section-offers {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+    section .offers .burger {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    section#menu .section-offers section.offers article.burger #div1 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    section .services {
+        width:30%
+    }
+    section .offers {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    section .offers figure{
+        width: 30%;
+        margin: 0 30px 15px 0;
+    }
+    section#menu .offers article{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    section .offers div#div1 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section .offers div#div2 {
+        width: 10%;
+    }
 }
 
+/* Inicio media queries 62.75em (1004px)*/
+
 @media(min-width: 62.75em){
+
     header nav .menu{
         width: auto;
     }
@@ -481,11 +585,4 @@ section.blogs article :is(h4, a) {
     }
 }
 
-/*Fin media queries HEADER*/
-
-
-
-/*Inicio media queries FOOTER*/
-
-
-/*Fin media queries FOOTER*/
+/*Fin media queries 62.75em*/
